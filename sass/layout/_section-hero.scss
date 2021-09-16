@@ -1,0 +1,30 @@
+.section-hero {
+  max-width: 135rem;
+  height: 95vh;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 8rem;
+  margin-bottom: 7rem;
+
+  &__col-left {
+    background-color: $color-secondary;
+    display: flex;
+    align-items: center;
+  }
+
+  &__col-right {
+    overflow: hidden;
+  }
+
+  &__text {
+    position: relative;
+    left: 4rem;
+    background-color: $color-light;
+    padding: 10rem;
+    z-index: 10;
+  }
+
+  &__img {
+    height: 100%;
+  }
+}

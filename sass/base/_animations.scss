@@ -1,0 +1,27 @@
+.slide-in {
+  animation-name: slide-in;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+
+  &--1 {
+    animation-delay: .1s;
+  }
+  &--2 {
+    animation-delay: .2s;
+  }
+  &--3 {
+    animation-delay: .5s;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

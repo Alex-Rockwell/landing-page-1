@@ -1,0 +1,25 @@
+.section-logos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 7rem;
+
+  &__item {
+    padding: 2rem 0;
+
+    &:nth-child(3) > img {
+      height: 3rem;
+    }
+    &:nth-child(4) > img {
+      height: 3.5rem;
+    }
+    &:nth-child(5) > img {
+      height: 2rem;
+    }
+  }
+
+  &__img {
+    height: 2.5rem;
+  }
+}

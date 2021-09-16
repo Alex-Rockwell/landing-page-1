@@ -1,0 +1,38 @@
+.btn {
+
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.2rem 4rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: all .2s ease;
+  }
+
+  &--dark:link,
+  &--dark:visited {
+    background-color: $color-dark;
+    color: $font-color-inverse;
+  }
+  &--dark:hover {
+    background-color: $color-primary-1;
+    color: $font-color-main;
+  }
+
+  &--light:link,
+  &--light:visited {
+    background-color: $color-light;
+    color: $font-color-main;
+    box-shadow: inset 0px 0px 0px 1px #000;
+  }
+  &--light:hover {
+    background-color: $color-dark;
+    color: $font-color-inverse;
+  }
+
+  &--fixed-width {
+    width: 22rem;
+    text-align: center;
+  }
+}
