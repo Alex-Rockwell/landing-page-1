@@ -1,7 +1,7 @@
 .section-hero {
   max-width: 135rem;
-  height: 95vh;
   margin: 0 auto;
+  height: 95vh;
   display: flex;
   margin-top: 8rem;
   margin-bottom: 7rem;
@@ -27,4 +27,8 @@
   &__img {
     height: 100%;
   }
+}
+
+.col-1-of-2 {
+  flex: 1 1 50%;
 }

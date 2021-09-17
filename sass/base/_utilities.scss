@@ -5,3 +5,21 @@
 .margin-right-small {
   margin-right: .5rem;
 }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.col-1of2-gap {
+  flex: 0 0 calc((100%-3rem)/2);
+  padding: 7rem 5rem;
+  
+  &:first-child {
+    margin-right: 3rem;
+  }
+}

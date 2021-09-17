@@ -1,0 +1,12 @@
+.section-info {
+  display: flex;
+
+  &__column {
+    &--left {
+      border-bottom: solid 6px $color-tertiary;
+    }
+    &--right {
+      border-bottom: solid 6px $color-secondary;
+    }
+  }
+}

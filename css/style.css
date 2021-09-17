@@ -45,6 +45,9 @@ body {
   font-size: 7rem;
   line-height: 1.1; }
 
+.heading-2-s {
+  font-size: 4.2rem; }
+
 .paragraph {
   font-size: 1.8rem; }
 
@@ -53,6 +56,20 @@ body {
 
 .margin-right-small {
   margin-right: .5rem; }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+
+.col-1of2-gap {
+  flex: 0 0 calc((100%-3rem)/2);
+  padding: 7rem 5rem; }
+  .col-1of2-gap:first-child {
+    margin-right: 3rem; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -83,14 +100,34 @@ body {
   width: 22rem;
   text-align: center; }
 
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-  display: flex;
-  align-items: center; }
+.btn-inline:link, .btn-inline:visited {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000; }
 
-.col-1-of-2 {
-  flex: 1 1 50%; }
+.btn-inline:hover {
+  color: #14b6d6;
+  transition: all .5s ease-in-out; }
+
+.btn-inline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  background-image: linear-gradient(170deg, #14b6d6 20%, #fff 20%, #fff 50%, #14b6d6 30%);
+  background-repeat: no-repeat;
+  background-size: 0%; }
+
+.btn-inline:hover::before {
+  background-color: #14b6d6;
+  background-image: linear-gradient(170deg, #14b6d6 20%, #fff 20%, #fff 50%, #14b6d6 30%);
+  transition: all .8s ease-in-out;
+  background-size: 700%; }
 
 .section-logos {
   width: 100%;
@@ -136,10 +173,14 @@ body {
   .header__link:hover {
     color: #666; }
 
+.is-scrolled {
+  transition: .5s ease-in-out;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.05); }
+
 .section-hero {
   max-width: 135rem;
-  height: 95vh;
   margin: 0 auto;
+  height: 95vh;
   display: flex;
   margin-top: 8rem;
   margin-bottom: 7rem; }
@@ -157,3 +198,13 @@ body {
     z-index: 10; }
   .section-hero__img {
     height: 100%; }
+
+.col-1-of-2 {
+  flex: 1 1 50%; }
+
+.section-info {
+  display: flex; }
+  .section-info__column--left {
+    border-bottom: solid 6px #67BEB0; }
+  .section-info__column--right {
+    border-bottom: solid 6px #EBD2B4; }

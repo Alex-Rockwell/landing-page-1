@@ -1,0 +1,40 @@
+
+.btn-inline {
+
+  &:link,
+  &:visited {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: $font-color-main;
+    // padding-bottom: .5rem;
+    // border-bottom: solid 1px $font-color-main;
+  }
+  &:hover {
+    color: $color-primary-3;
+    // border-bottom: solid 1px $color-primary-3;
+    transition: all .5s ease-in-out;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    background-image: linear-gradient(170deg, $color-primary-3 20%, #fff 20%, #fff 50%, $color-primary-3 30%);
+    background-repeat: no-repeat;
+    background-size: 0%;
+  }
+  
+  &:hover::before {
+    background-color: $color-primary-3;
+    background-image: linear-gradient(170deg, $color-primary-3 20%, #fff 20%, #fff 50%, $color-primary-3 30%);
+    transition: all .8s ease-in-out;
+    background-size: 700%;
+  }
+
+}
