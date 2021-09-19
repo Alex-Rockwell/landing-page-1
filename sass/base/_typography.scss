@@ -7,11 +7,18 @@ body {
 
 .heading-1 {
   font-size: 7rem;
-  line-height: 1.1;
+  line-height: 1;
+  letter-spacing: -2px;
 }
 
 .heading-2-s {
   font-size: 4.2rem;
+}
+
+.heading-2-lg {
+  font-size: 6.2rem;
+  line-height: 1;
+  font-weight: 500;
 }
 
 .paragraph {

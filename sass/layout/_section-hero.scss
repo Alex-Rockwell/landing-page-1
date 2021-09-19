@@ -1,15 +1,13 @@
 .section-hero {
   max-width: 135rem;
   margin: 0 auto;
-  height: 95vh;
+  height: 45vw;
   display: flex;
   margin-top: 8rem;
-  margin-bottom: 7rem;
+  margin-bottom: $margin-bottom-md;
 
   &__col-left {
     background-color: $color-secondary;
-    display: flex;
-    align-items: center;
   }
 
   &__col-right {
@@ -20,15 +18,15 @@
     position: relative;
     left: 4rem;
     background-color: $color-light;
-    padding: 10rem;
-    z-index: 10;
+    padding: 9rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    overflow: hidden;
+    width: auto;
+    aspect-ratio: 1.4;
   }
 
   &__img {
     height: 100%;
   }
-}
-
-.col-1-of-2 {
-  flex: 1 1 50%;
 }

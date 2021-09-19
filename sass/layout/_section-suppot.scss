@@ -1,12 +1,15 @@
-.section-info {
+.section-support {
   display: flex;
+  margin-bottom: 14rem;
 
   &__column {
     &--left {
       border-bottom: solid 6px $color-tertiary;
+      padding: 7rem 5rem;
     }
     &--right {
       border-bottom: solid 6px $color-secondary;
+      padding: 7rem 5rem;
     }
   }
 }
