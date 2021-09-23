@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./splide/dist/css/splide.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Home - Some Company</title>
 </head>
@@ -146,33 +147,108 @@
       </div>
     </section>
 
-    <section class="section-carousel">
-      <div class="slider" id="slider">
-        <div class="slide" id="slide">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product1">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product1">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product1">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product1">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product2">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product2">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product2">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product2">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product3">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product3">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product3">
-          <img class="item" src="http://via.placeholder.com/200x200?text=Product3">
+    <section class="section-carousel margin-bottom-medium">
+      <div id="splide" class="splide">
+        <div class="splide__track">
+          <div class="splide__list">
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-1.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Smartphones</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-2.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Tablets</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-3.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Laptops</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-4.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Wearables</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-5.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Audio</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-6.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Photography</p>
+              </div>
+            </a>
+
+          </div>
         </div>
-        <button class="ctrl-btn pro-prev">Prev</button>
-        <button class="ctrl-btn pro-next">Next</button>
+      </div>  
+    </section>
+
+    <section class="section-commitment">
+      <div class="section-commitment__left col-1of2">
+        <div class="section-commitment__text">
+          <h2 class="heading-2-lg margin-bottom-small">
+            Our Commitment
+          </h2>
+          <p class="paragraph margin-bottom-small">
+            Greenbridge are responsible for delivering an outstanding repair service and a smooth customer journey. We understand how reliant our customers are on their devices. We aim to promise a good service and deliver an excellent one.
+          </p>
+        </div>
       </div>
+      <div class="section-commitment__right col-1of2">
+
+      </div>
+
     </section>
 
   </main>
 
   <footer class="footer">
-
   </footer>
 
   <script src="./script.js"></script>
+  <script src="./splide/dist/js/splide.min.js"></script>
+  <script>
+    new Splide( '.splide', {
+      type: 'loop',
+      perPage: 3,
+      perMove: 1,
+      speed: 1000,
+      pagination: false,
+      classes: {
+		arrows: 'splide__arrows',
+		arrow : 'splide__arrow change-arrow',
+		prev  : 'splide__arrow--prev',
+		next  : 'splide__arrow--next',
+	},
+    } ).mount();
+  </script>
 </body>
 </html>

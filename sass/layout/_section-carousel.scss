@@ -1,57 +1,77 @@
-.section-carousel {
-  .slider {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    margin: auto;
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
-  
-  .slider::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .slider .slide {
+.splide {
+
+  &__list {
+    height: 75vh;
     display: flex;
-    position: absolute;
-    left: 0;
-    transition: 0.3s left ease-in-out;
+    align-items: center;
+  }
+
+  &__slide {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $font-color-main;
+  }
+
+  &__img-cont {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
   }
   
-  .slider .item {
-    margin-right: 10px;
+  &__img {
+    max-height: 80%;
+    max-width: 80%;
+    transition: .5s ease-in-out;
   }
-  
-  .slider .item:last-child {
-    margin-right: 0;
+
+  &__text-cont {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .ctrl {
-    text-align: center;
-    margin-top: 5px;
-  }
-  
-  .ctrl-btn {
-    padding: 20px 20px;
-    min-width: 50px;
-    background: #fff;
-    border: none;
+
+  &__text {
+    font-size: 3.2rem;
     font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-  
-    position: absolute;
-    top: 50%;
-    margin-top: -27.5px;
   }
-  
-  .ctrl-btn.pro-prev {
-    left: 0;
+
+  &__slide:nth-child(3n-2):hover  &__img-cont {
+    background-color: $color-primary-1;
   }
-  
-  .ctrl-btn.pro-next {
-    right: 0;
+  &__slide:nth-child(3n-1):hover  &__img-cont {
+    background-color: $color-secondary;
   }
+  &__slide:nth-child(3n):hover  &__img-cont {
+    background-color: $color-tertiary-2;
+  }
+
+  &__slide:hover  &__img {
+    transform: scale(1.1);
+  }
+
+  &__slide:hover  &__text {
+    text-decoration: underline;
+  }
+}
+
+.change-arrow {
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+  transform: scale(1.5) translateY(-5rem);
+  background-color: rgba(#000,.2);
+  fill: #fff;
+}
+
+.change-arrow:hover {
+  background-color: #14b6d6;
 }

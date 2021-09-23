@@ -193,51 +193,72 @@ body {
   transition: .5s ease-in-out;
   box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.05); }
 
-.section-carousel .slider {
-  width: 100%;
-  height: 200px;
-  position: relative;
-  margin: auto;
-  overflow-x: scroll;
-  overflow-y: hidden; }
-
-.section-carousel .slider::-webkit-scrollbar {
-  display: none; }
-
-.section-carousel .slider .slide {
+.splide__list {
+  height: 75vh;
   display: flex;
-  position: absolute;
-  left: 0;
-  transition: 0.3s left ease-in-out; }
+  align-items: center; }
 
-.section-carousel .slider .item {
-  margin-right: 10px; }
+.splide__slide {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000; }
 
-.section-carousel .slider .item:last-child {
-  margin-right: 0; }
+.splide__img-cont {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease-in-out; }
 
-.section-carousel .ctrl {
-  text-align: center;
-  margin-top: 5px; }
+.splide__img {
+  max-height: 80%;
+  max-width: 80%;
+  transition: .5s ease-in-out; }
 
-.section-carousel .ctrl-btn {
-  padding: 20px 20px;
-  min-width: 50px;
-  background: #fff;
-  border: none;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  position: absolute;
-  top: 50%;
-  margin-top: -27.5px; }
+.splide__text-cont {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.section-carousel .ctrl-btn.pro-prev {
-  left: 0; }
+.splide__text {
+  font-size: 3.2rem;
+  font-weight: 600; }
 
-.section-carousel .ctrl-btn.pro-next {
-  right: 0; }
+.splide__slide:nth-child(3n-2):hover .splide__img-cont {
+  background-color: #b7d8df; }
+
+.splide__slide:nth-child(3n-1):hover .splide__img-cont {
+  background-color: #EBD2B4; }
+
+.splide__slide:nth-child(3n):hover .splide__img-cont {
+  background-color: #92e4d6; }
+
+.splide__slide:hover .splide__img {
+  transform: scale(1.1); }
+
+.splide__slide:hover .splide__text {
+  text-decoration: underline; }
+
+.change-arrow {
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+  transform: scale(1.5) translateY(-5rem);
+  background-color: rgba(0, 0, 0, 0.2);
+  fill: #fff; }
+
+.change-arrow:hover {
+  background-color: #14b6d6; }
+
+.section-commitment {
+  display: flex; }
 
 .section-hero {
   max-width: 135rem;
