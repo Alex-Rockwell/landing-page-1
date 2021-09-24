@@ -1,0 +1,36 @@
+.section-features {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    padding: 3rem;
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & *:last-child {
+      margin-top: auto;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    font-size: 3.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  &__icon {
+    margin-right: 2rem;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+  }
+  
+}

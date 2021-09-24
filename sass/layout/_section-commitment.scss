@@ -1,3 +1,31 @@
 .section-commitment {
   display: flex;
+  height: 40vw;
+  overflow: hidden;
+
+  &__left {
+    margin-top: 10rem;
+    background-color: $color-tertiary;
+  }
+
+  &__right {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__text {
+    background-color: $color-light;
+    position: relative;
+    left: 13%;
+    z-index: 10;
+    padding: 7rem 5rem;
+  }
+
+  &__img {
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

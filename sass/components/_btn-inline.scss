@@ -30,7 +30,7 @@
   &:hover::before {
     background-color: $color-primary-3;
     background-image: linear-gradient(170deg, $color-primary-3 20%, #fff 20%, #fff 50%, $color-primary-3 30%);
-    transition: all .8s ease-in-out;
+    transition: all .7s ease-in-out;
     background-size: 700%;
   }
 
