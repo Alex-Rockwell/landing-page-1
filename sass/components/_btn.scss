@@ -35,4 +35,14 @@
     width: 22rem;
     text-align: center;
   }
+
+  &--dark2:link,
+  &--dark2:visited {
+    background-color: $color-dark;
+    color: $font-color-inverse;
+  }
+  &--dark2:hover {
+    background-color: $color-light;
+    color: $font-color-main;
+  }
 }

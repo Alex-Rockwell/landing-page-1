@@ -1,0 +1,40 @@
+.section-speak {
+  display: flex;
+  height: 40vw;
+  overflow: hidden;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__right {
+    background-color: $color-primary-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  &__img-container {
+    flex: 0 0 66.6%;
+    overflow: hidden;
+  }
+
+  &__img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  &__text {
+    flex: 0 0 33.3%;
+    padding: 2rem;
+  }
+  
+  &__cta {
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

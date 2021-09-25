@@ -1,0 +1,46 @@
+.footer {
+  background-color: $color-dark;
+  padding: 9rem;
+
+  &__logo-box {
+    margin-bottom: 3rem;
+  }
+
+  &__logo {
+
+  }
+
+  &__logo-img {
+    height: 3.5rem;
+    width: 12.2rem;
+    fill: $color-light;
+  }
+
+  &__info {
+    color: $color-light;
+    display: flex;
+  }
+
+  &__adress {
+    margin-right: auto;
+  }
+
+  &__nav {
+
+  }
+
+  &__nav-box1 {
+
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $font-color-inverse;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &__copy {
+
+  }
+}
