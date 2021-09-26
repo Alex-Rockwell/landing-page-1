@@ -6,6 +6,10 @@
   &__left {
     margin-top: 10rem;
     background-color: $color-tertiary;
+
+    @media screen and (max-width: 68.75em) {
+      margin-top: 0;
+    }
   }
 
   &__right {
@@ -18,7 +22,20 @@
     position: relative;
     left: 13%;
     z-index: 10;
-    padding: 5rem;
+    padding: 5rem 5rem 8rem;
+
+    @media screen and (max-width: 93.75em) {
+      padding: 3rem;
+    }
+
+    @media screen and (max-width: 81.25em) {
+      padding: 0 3rem;
+    }
+    
+    @media screen and (max-width: 68.75em) {
+      padding: 0 1rem;
+      left: 0;
+    }
   }
 
   &__img {

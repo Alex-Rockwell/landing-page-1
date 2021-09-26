@@ -8,6 +8,7 @@
     font-weight: 500;
     font-size: 1.6rem;
     transition: all .2s ease;
+    margin-bottom: 1rem;
   }
 
   &--dark:link,
@@ -34,6 +35,11 @@
   &--fixed-width {
     width: 22rem;
     text-align: center;
+
+    @media screen and (max-width: 68.75em) {
+      width: fit-content;
+      padding: 1.2rem 0rem;
+    }
   }
 
   &--dark2:link,

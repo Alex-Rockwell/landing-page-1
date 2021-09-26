@@ -22,25 +22,52 @@
   }
 
   &__adress {
+    font-size: 1.7rem;
     margin-right: auto;
   }
 
   &__nav {
-
+    display: flex;
+    padding-bottom: 8rem;
   }
 
-  &__nav-box1 {
-
+  &__nav-box {
+    &:not(:last-child) {
+      margin-right: 8rem;
+    }
   }
 
-  &__nav-link {
-    text-decoration: none;
-    color: $font-color-inverse;
-    display: block;
-    margin-bottom: 1rem;
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $font-color-inverse;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    &:hover {
+      color: $font-gray-light;
+    }
+
+    &--dark:link,
+    &--dark:visited {
+      color: $font-gray-lightest;
+    }
+    &--dark:hover {
+      color: $font-gray-light;
+    }
   }
 
   &__copy {
-
+    border-top: solid 1px #444;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    color: $font-color-inverse;
+    display: flex;
+    & > a {
+      margin-right: auto;
+    }
   }
+ 
 }
