@@ -1,10 +1,23 @@
 .section-hero {
-  max-width: 135rem;
+  max-width: 130rem;
   margin: 0 auto;
   height: 45vw;
   display: flex;
   margin-top: 8rem;
   margin-bottom: $margin-bottom-md;
+
+  @media screen and (max-width: 48.75em) {
+    flex-direction: column; 
+    height: auto;
+  }
+
+  & > * {
+    flex: 0 0 50%;
+
+    @media screen and (max-width: 48.75em) {
+      flex: 1 1 100%;
+    }
+  }
 
   &__col-left {
     background-color: $color-secondary;
@@ -12,6 +25,11 @@
 
   &__col-right {
     overflow: hidden;
+
+    @media screen and (max-width: 48.75em) {
+      width: 100%; 
+      max-height: 60vh;
+    }
   }
 
   &__text {
@@ -22,26 +40,36 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
     overflow: hidden;
-    width: auto;
 
     @media screen and (max-width: 93.75em) {
       padding: 7rem;
-      margin-top: 4rem;
     }
-
+    
     @media screen and (max-width: 81.25em) {
       padding: 5rem;
+      margin-top: 6rem;
     }
 
     @media screen and (max-width: 68.75em) {
-      left: 0;
       padding: 2rem;
-      margin-top: 0;
     }
-  
+    
+    @media screen and (max-width: 58em) {
+      padding: 1rem;
+    }
+
+    @media screen and (max-width: 48.75em) {
+      
+    }
+    
   }
 
   &__img {
     height: 100%;
+
+    @media screen and (max-width: 48.75em) {
+      width: 100vw;
+      max-height: 100vh;
+    }
   }
 }
