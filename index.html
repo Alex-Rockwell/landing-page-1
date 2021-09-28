@@ -14,7 +14,7 @@
 <body>
 
   <header class="header">
-    <div class="container flex">
+    <div class="header__container">
   
       <a href="#" class="header__logo">
         <svg class="header__logo-img">
@@ -22,15 +22,30 @@
         </svg>
       </a>
   
-      <ul class="header__navigation">
-        <li><a href="#" class="header__link">How it works</a></li>
-        <li><a href="#" class="header__link">Help</a></li>
-        <li><a href="#" class="header__link">Guides</a></li>
-        <li><a href="#" class="header__link">About</a></li>
-      </ul>
+      <div class="header__nav-container">
+        <nav class="header__navigation">
+          <a href="#" class="header__link">How it works</a>
+          <a href="#" class="header__link">Help</a>
+          <a href="#" class="header__link">Guides</a>
+          <a href="#" class="header__link">About</a>
+        </nav>
+        <div class="header__navigation-b">
+          <a href="#" class="btn-burger">Check status</a>
+          <a href="#" class="btn-burger">Track my delivery</a>
+          <p class="header__copy">&copy; Placeholder</p>
+        </div>
+      </div>
 
-      <a href="#" class="header__link">Check status</a>
-      <a href="#" class="btn btn--dark">Track my delivery</a>
+      <div class="header__log-in">
+        <a href="#" class="header__link">Check status</a>
+        <a href="#" class="btn btn--dark">Track my delivery</a>
+      </div>
+
+      <div class="header__burger">
+        <div class="header__line-1"></div>
+        <div class="header__line-2"></div>
+        <div class="header__line-3"></div>
+      </div>
       
     </div>
   </header>

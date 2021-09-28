@@ -1,0 +1,18 @@
+.btn-burger {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: $font-color-main;
+  background-color: $color-light;
+  text-align: center;
+  display: block;
+  padding: 1.6rem 4rem;
+  transition: all .2s ease;
+  margin-bottom: 1.5rem;
+
+  display: none;
+
+  @media screen and (max-width: 41.25em) {
+    display: block;
+  }
+}

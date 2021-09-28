@@ -6,20 +6,32 @@
   background-color: $color-light;
   z-index: 20;
 
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__logo {
-    margin-right: 10rem;
-    padding: 2rem 0;
+    padding: 20px;
   }
-
+  
   &__logo-img {
-    height: 3.5rem;
-    width: 12.2rem;
+    height: 35px;
+    width: 122px;
   }
-
+  
   &__navigation {
     list-style: none;
     display: flex;
-    margin-right: auto;
+  }
+
+  &__log-in {
+    @media screen and (max-width: 48.75em) {
+      display: none;
+    }
   }
 
   &__link:link,
@@ -35,9 +47,109 @@
   &__link:hover {
     color: $font-gray-dark;
   }
+
+  &__burger {
+    display: none;
+    margin-right: 2rem;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+    & > * {
+      width: 35px;
+      height: 4px;
+      background-color: #000;
+      margin: 5px;
+      transition: all .2s ease-out;
+    }
+
+    @media screen and (max-width: 41.25em) {
+      display: block;
+    }
+
+    &--active {
+
+      .header__line-1 {
+        transform: translateY(5px) rotate(225deg);
+      }
+      .header__line-2 {
+        display: none;
+      }
+      .header__line-3 {
+        transform: translateY(-5px) rotate(-225deg);
+      }
+    }
+  }
+
 }
 
 .is-scrolled {
   transition: .5s ease-in-out;
   box-shadow: 0px 5px 7px 0px rgba(0,0,0,.05);
 }
+
+.header__copy {
+  display: none;
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: $font-color-inverse;
+  text-align: center;
+}
+
+@media screen and (max-width: 41.25em) {
+
+  .header__nav-container {
+    display: none;
+    position: fixed;
+    top: 75px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .header__navigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+
+    :first-child {
+      margin-top: 5rem;
+    }
+
+    :last-child {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .header__link:link,
+  .header__link:visited {
+    display: block;
+    font-size: 3.7rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 2rem 3rem;
+  }
+
+  .header__link:hover {
+    color: $font-gray-dark;
+  }
+
+  .header__navigation-b {
+    background-color: #000;
+    flex: 1 1 auto;
+    padding: 40px 15px;
+  }
+  
+
+  .header__nav-container--active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__copy {
+    display: block;
+  }
+  
+}
+
