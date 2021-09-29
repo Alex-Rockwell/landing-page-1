@@ -23,15 +23,21 @@
 }
 
 .col-1of2 {
-  flex: 0 0 50%;
+  flex: 1 1 50%;
 }
 
 .col-1of2-gap {
-  flex-basis: calc((100%-3rem)/2);
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1 1 calc((100%-3rem)/2);
+
+  @media screen and (max-width: 48.75em) {
+    flex: 0 0 1;
+  }
   
   &:first-child {
     margin-right: 3rem;
+
+    @media screen and (max-width: 48.75em) {
+      margin-right: 0;
+    }
   }
 }

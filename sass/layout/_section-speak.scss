@@ -3,6 +3,23 @@
   height: 40vw;
   overflow: hidden;
 
+  @media screen and (max-width: 93.75em){
+    height: 45vw;
+  }
+
+  @media screen and (max-width: 75em){
+    height: 50vw;
+  }
+
+  @media screen and (max-width: 68.75em){
+    height: 60vw;
+  }
+
+  @media screen and (max-width: 56.25em){
+    height: 65vw;
+  }
+
+
   &__left {
     display: flex;
     flex-direction: column;

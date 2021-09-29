@@ -28,15 +28,21 @@
 
 html {
   font-size: 62.5%; }
-  @media screen and (max-width: 56.25em) {
+  @media screen and (max-width: 68.75em) {
     html {
       font-size: 56.25%; } }
   @media screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media screen and (max-width: 48.75em) {
+    html {
+      font-size: 43.75%; } }
 
 body {
   box-sizing: border-box; }
+  @media screen and (max-width: 75em) {
+    body {
+      padding: 2rem; } }
 
 ::selection {
   background-color: #b7d8df; }
@@ -59,6 +65,9 @@ body {
   font-size: 6.2rem;
   line-height: 1.2;
   font-weight: 500; }
+  @media screen and (max-width: 48.75em) {
+    .heading-2-lg {
+      font-size: 5rem; } }
 
 .heading-3 {
   font-size: 3.2rem;
@@ -93,14 +102,18 @@ body {
   margin: 0 auto; }
 
 .col-1of2 {
-  flex: 0 0 50%; }
+  flex: 1 1 50%; }
 
 .col-1of2-gap {
-  flex-basis: calc((100%-3rem)/2);
-  flex-grow: 1;
-  flex-shrink: 1; }
+  flex: 1 1 calc((100%-3rem)/2); }
+  @media screen and (max-width: 48.75em) {
+    .col-1of2-gap {
+      flex: 0 0 1; } }
   .col-1of2-gap:first-child {
     margin-right: 3rem; }
+    @media screen and (max-width: 48.75em) {
+      .col-1of2-gap:first-child {
+        margin-right: 0; } }
 
 .btn-burger {
   text-decoration: none;
@@ -452,6 +465,9 @@ body {
 .section-features {
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 41.25em) {
+    .section-features {
+      flex-direction: column; } }
   .section-features__item {
     padding: 3rem;
     flex: 0 0 32%;
@@ -460,6 +476,9 @@ body {
     align-items: flex-start; }
     .section-features__item *:last-child {
       margin-top: auto; }
+    @media screen and (max-width: 41.25em) {
+      .section-features__item {
+        align-items: center; } }
   .section-features__heading {
     display: flex;
     font-size: 3.2rem;
@@ -473,6 +492,10 @@ body {
   .section-features__text {
     margin-bottom: 3rem;
     font-size: 1.8rem; }
+    @media screen and (max-width: 41.25em) {
+      .section-features__text {
+        font-size: 2.5rem;
+        text-align: center; } }
 
 .section-hero {
   max-width: 130rem;
@@ -484,7 +507,8 @@ body {
   @media screen and (max-width: 48.75em) {
     .section-hero {
       flex-direction: column;
-      height: auto; } }
+      height: auto;
+      margin-top: 10rem; } }
   .section-hero__col-left {
     background-color: #EBD2B4;
     flex: 0 0 50%; }
@@ -534,21 +558,38 @@ body {
   display: flex;
   height: 40vw;
   overflow: hidden; }
+  @media screen and (max-width: 48.75em) {
+    .section-info1 {
+      flex-direction: column;
+      height: 85vh; } }
   .section-info1__col-left {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 48.75em) {
+      .section-info1__col-left {
+        flex: 0 0 65%; } }
   .section-info1__col-right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 0 7rem; }
+    @media screen and (max-width: 81.25em) {
+      .section-info1__col-right {
+        padding: 0 4rem; } }
+    @media screen and (max-width: 68.75em) {
+      .section-info1__col-right {
+        padding: 0; } }
   .section-info1__img {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     height: 100%; }
+    @media screen and (max-width: 48.75em) {
+      .section-info1__img {
+        width: 100vw;
+        height: auto; } }
 
 .section-info2 {
   display: flex; }
@@ -563,6 +604,18 @@ body {
   display: flex;
   height: 40vw;
   overflow: hidden; }
+  @media screen and (max-width: 93.75em) {
+    .section-speak {
+      height: 45vw; } }
+  @media screen and (max-width: 75em) {
+    .section-speak {
+      height: 50vw; } }
+  @media screen and (max-width: 68.75em) {
+    .section-speak {
+      height: 60vw; } }
+  @media screen and (max-width: 56.25em) {
+    .section-speak {
+      height: 65vw; } }
   .section-speak__left {
     display: flex;
     flex-direction: column; }
@@ -594,9 +647,12 @@ body {
 .section-support {
   display: flex;
   margin-bottom: 14rem; }
-  .section-support__column--left {
+  .section-support__column-left {
     border-bottom: solid 6px #67BEB0;
-    padding: 7rem 5rem; }
-  .section-support__column--right {
+    padding: 7rem 5rem;
+    flex: 1 1 calc((100%-3rem)/2);
+    margin-right: 3rem; }
+  .section-support__column-right {
     border-bottom: solid 6px #EBD2B4;
-    padding: 7rem 5rem; }
+    padding: 7rem 5rem;
+    flex: 1 1 calc((100%-3rem)/2); }

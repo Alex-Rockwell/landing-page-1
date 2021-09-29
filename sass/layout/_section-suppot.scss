@@ -2,14 +2,16 @@
   display: flex;
   margin-bottom: 14rem;
 
-  &__column {
-    &--left {
+  &__column-left {
       border-bottom: solid 6px $color-tertiary;
       padding: 7rem 5rem;
-    }
-    &--right {
+      flex: 1 1 calc((100%-3rem)/2);
+      margin-right: 3rem;
+  }
+  &__column-right {
       border-bottom: solid 6px $color-secondary;
       padding: 7rem 5rem;
-    }
+      flex: 1 1 calc((100%-3rem)/2);
   }
+
 }
