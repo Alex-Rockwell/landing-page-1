@@ -10,25 +10,22 @@
     flex-direction: column; 
     height: auto;
   }
-
-  & > * {
-    flex: 0 0 50%;
-
-    @media screen and (max-width: 48.75em) {
-      flex: 0 0 100%;
-    }
-  }
-
+  
   &__col-left {
     background-color: $color-secondary;
+    flex: 0 0 50%;
   }
-
+  
   &__col-right {
+    flex: 0 0 50%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 48.75em) {
-      width: 100%; 
-      max-height: 60vh;
+      width: 100vw; 
+      max-height: 40vh;
     }
   }
 
@@ -68,10 +65,9 @@
 
   &__img {
     height: 100%;
-
+    
     @media screen and (max-width: 48.75em) {
-      width: 100vw;
-      max-height: 100vh;
+      height: 80vw;
     }
   }
 }
