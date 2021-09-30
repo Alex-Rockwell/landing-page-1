@@ -36,7 +36,7 @@ html {
       font-size: 50%; } }
   @media screen and (max-width: 48.75em) {
     html {
-      font-size: 43.75%; } }
+      font-size: 56.25%; } }
 
 body {
   box-sizing: border-box; }
@@ -465,7 +465,7 @@ body {
 .section-features {
   display: flex;
   justify-content: space-between; }
-  @media screen and (max-width: 41.25em) {
+  @media screen and (max-width: 48.75em) {
     .section-features {
       flex-direction: column; } }
   .section-features__item {
@@ -476,7 +476,7 @@ body {
     align-items: flex-start; }
     .section-features__item *:last-child {
       margin-top: auto; }
-    @media screen and (max-width: 41.25em) {
+    @media screen and (max-width: 48.75em) {
       .section-features__item {
         align-items: center; } }
   .section-features__heading {
@@ -492,7 +492,7 @@ body {
   .section-features__text {
     margin-bottom: 3rem;
     font-size: 1.8rem; }
-    @media screen and (max-width: 41.25em) {
+    @media screen and (max-width: 48.75em) {
       .section-features__text {
         font-size: 2.5rem;
         text-align: center; } }
@@ -512,6 +512,9 @@ body {
   .section-hero__col-left {
     background-color: #EBD2B4;
     flex: 0 0 50%; }
+    @media screen and (max-width: 48.75em) {
+      .section-hero__col-left {
+        margin-bottom: 5rem; } }
   .section-hero__col-right {
     flex: 0 0 50%;
     overflow: hidden;
@@ -593,6 +596,10 @@ body {
 
 .section-info2 {
   display: flex; }
+  @media screen and (max-width: 48.75em) {
+    .section-info2 {
+      flex-direction: column;
+      margin-bottom: 0; } }
   .section-info2 > * {
     display: flex;
     flex-direction: column;
@@ -615,20 +622,29 @@ body {
       height: 60vw; } }
   @media screen and (max-width: 56.25em) {
     .section-speak {
-      height: 65vw; } }
+      flex-direction: column;
+      height: 110vh; } }
   .section-speak__left {
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 56.25em) {
+      .section-speak__left {
+        flex: 1 1 auto; } }
   .section-speak__right {
     background-color: #D4E7EB;
     display: flex;
     align-items: center;
-    justify-content: center;
-    display: flex; }
+    justify-content: center; }
+    @media screen and (max-width: 56.25em) {
+      .section-speak__right {
+        flex: 1 1 auto; } }
   .section-speak__img-container {
     position: relative;
     flex: 0 0 66.6%;
     overflow: hidden; }
+    @media screen and (max-width: 56.25em) {
+      .section-speak__img-container {
+        flex: 1 1 35vh; } }
   .section-speak__img {
     position: absolute;
     top: 50%;
@@ -638,6 +654,10 @@ body {
   .section-speak__text {
     flex: 0 0 33.3%;
     padding: 2rem; }
+    @media screen and (max-width: 56.25em) {
+      .section-speak__text {
+        flex: 1 1 auto;
+        padding: 2rem 2rem 0; } }
   .section-speak__cta {
     max-width: 35rem;
     display: flex;

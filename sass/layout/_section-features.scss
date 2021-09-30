@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 41.25em){
+  @media screen and (max-width: 48.75em){
     flex-direction: column;
   }
 
@@ -17,7 +17,7 @@
       margin-top: auto;
     }
 
-    @media screen and (max-width: 41.25em){
+    @media screen and (max-width: 48.75em){
       align-items: center;
     }
 
@@ -41,7 +41,7 @@
     margin-bottom: 3rem;
     font-size: 1.8rem;
 
-    @media screen and (max-width: 41.25em){
+    @media screen and (max-width: 48.75em){
       font-size: 2.5rem;
       text-align: center;
     }
