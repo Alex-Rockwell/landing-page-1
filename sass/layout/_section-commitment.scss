@@ -3,18 +3,34 @@
   height: 40vw;
   overflow: hidden;
 
+  @media screen and (max-width: 41.25em){
+    flex-direction: column;
+    height: 85vh;
+  }
+
   &__left {
     margin-top: 10rem;
     background-color: $color-tertiary;
+    flex: 1 1 50%;
 
     @media screen and (max-width: 68.75em) {
+      flex: 1 1 0;
       margin-top: 0;
+      background-color: transparent;
     }
   }
 
   &__right {
-    position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
+
+    @media screen and (max-width: 68.75em) {
+      flex: 1 1 1;
+      margin-top: 0;
+    }
   }
 
   &__text {
@@ -40,9 +56,10 @@
 
   &__img {
     max-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 41.25em){
+      height: 70%;
+      width: auto;
+    }
   }
 }

@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: space-around;
   margin-bottom: $margin-bottom-md;
+  
+  @media screen and (max-width: 48.75em) {
+    margin-bottom: 0;
+  }
 
   &__item {
     padding: 2rem 0;
@@ -16,6 +20,11 @@
     }
     &:nth-child(5) > img {
       height: 2rem;
+    }
+    &:last-child {
+      @media screen and (max-width: 41.25em){
+        display: none;
+      }
     }
   }
 

@@ -2,6 +2,10 @@
   background-color: $color-dark;
   padding: 9rem;
 
+  @media screen and (max-width: 48.75em) {
+    padding: 9rem 5rem;
+  }
+
   &__logo-box {
     margin-bottom: 3rem;
   }
@@ -19,22 +23,50 @@
   &__info {
     color: $color-light;
     display: flex;
+
+    @media screen and (max-width: 48.75em) {
+      flex-direction: column;
+    }
   }
 
   &__adress {
     font-size: 1.7rem;
     margin-right: auto;
+
+    @media screen and (max-width: 48.75em) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__nav {
     display: flex;
     padding-bottom: 8rem;
+
+    @media screen and (max-width: 48.75em) {
+      flex-direction: column;
+      padding-bottom: 2rem;
+    }
   }
 
   &__nav-box {
+    @media screen and (max-width: 48.75em) {
+      margin-bottom: 2rem;
+    }
+
     &:not(:last-child) {
       margin-right: 8rem;
     }
+
+    nav {
+      & > * {
+        padding-right: 1rem;
+      }
+
+      @media screen and (max-width: 48.75em) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    } 
   }
 
   &__link {

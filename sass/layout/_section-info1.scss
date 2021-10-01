@@ -7,6 +7,9 @@
     flex-direction: column;
     height: 85vh;
   }
+  @media screen and (max-width: 41.25em) {
+    height: 70vh;
+  }
 
   &__col-left {
     position: relative;
@@ -14,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1 1 calc((100%-3rem)/2);
 
     @media screen and (max-width: 48.75em) {
       flex: 0 0 65%;
@@ -26,6 +30,15 @@
     align-items: flex-start;
     justify-content: center;
     padding: 0 7rem;
+    flex: 1 1 calc((100%-3rem)/2);
+
+    &:first-child {
+      margin-right: 3rem;
+  
+      @media screen and (max-width: 48.75em) {
+        margin-right: 0;
+      }
+    }
 
     @media screen and (max-width: 81.25em) {
       padding: 0 4rem;
