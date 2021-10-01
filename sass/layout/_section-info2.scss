@@ -1,5 +1,6 @@
 .section-info2 {
   display: flex;
+  margin-bottom: $margin-bottom-md;
 
   @media screen and (max-width: 48.75em){
     flex-direction: column;
@@ -12,6 +13,15 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0 1rem;
+    flex: 1 1 calc((100%-3rem)/2);
+  }
+
+  & > *:first-child {
+    margin-right: 3rem;
+
+    @media screen and (max-width: 48.75em) {
+      margin-right: 0;
+    }
   }
 
 }

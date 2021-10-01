@@ -2,10 +2,16 @@
   display: flex;
   height: 40vw;
   overflow: hidden;
+  margin-bottom: $margin-bottom-lg;
 
   @media screen and (max-width: 41.25em){
     flex-direction: column;
-    height: 85vh;
+    height: 75rem;
+    margin-bottom: 5rem;
+  }
+
+  @media screen and (max-width: 31.25em){
+    height: 60rem;
   }
 
   &__left {
@@ -14,7 +20,7 @@
     flex: 1 1 50%;
 
     @media screen and (max-width: 68.75em) {
-      flex: 1 1 0;
+      flex: 1 1 30%;
       margin-top: 0;
       background-color: transparent;
     }
@@ -28,7 +34,7 @@
     flex: 1 1 50%;
 
     @media screen and (max-width: 68.75em) {
-      flex: 1 1 1;
+      flex: 1 1 70%;
       margin-top: 0;
     }
   }
@@ -52,14 +58,19 @@
       padding: 0 1rem;
       left: 0;
     }
+
+    @media screen and (max-width: 41.25em) {
+      padding-bottom: 5rem;
+    }
   }
 
   &__img {
     max-height: 100%;
 
     @media screen and (max-width: 41.25em){
-      height: 70%;
+      height: 100%;
       width: auto;
+      transform: translateX(-10%);
     }
   }
 }

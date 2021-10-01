@@ -6,12 +6,16 @@
     padding: 9rem 5rem;
   }
 
-  &__logo-box {
-    margin-bottom: 3rem;
+  @media screen and (max-width: 41.25em) {
+    padding: 4rem 4rem;
   }
 
-  &__logo {
+  &__logo-box {
+    margin-bottom: 3rem;
 
+    @media screen and (max-width: 41.25em) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__logo-img {
@@ -36,6 +40,10 @@
     @media screen and (max-width: 48.75em) {
       margin-bottom: 5rem;
     }
+
+    @media screen and (max-width: 41.25em) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__nav {
@@ -45,6 +53,9 @@
     @media screen and (max-width: 48.75em) {
       flex-direction: column;
       padding-bottom: 2rem;
+    }
+    @media screen and (max-width: 41.25em) {
+      padding-bottom: 0rem;
     }
   }
 
@@ -100,6 +111,11 @@
     & > a {
       margin-right: auto;
     }
+
+    @media screen and (max-width: 41.25em) {
+      padding-top: 2rem;
+    }
+    
   }
  
 }

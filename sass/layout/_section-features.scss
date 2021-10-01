@@ -1,9 +1,13 @@
 .section-features {
   display: flex;
   justify-content: space-between;
+  margin-bottom: $margin-bottom-lg;
 
   @media screen and (max-width: 48.75em){
     flex-direction: column;
+  }
+  @media screen and (max-width: 41.25em){
+    margin-bottom: .5rem;
   }
 
   &__item {
@@ -29,6 +33,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
+
+    @media screen and (max-width: 41.25em){
+      font-size: 2.4rem;
+    }
   }
   
   &__icon {
@@ -42,9 +50,7 @@
     font-size: 1.8rem;
 
     @media screen and (max-width: 48.75em){
-      font-size: 2.5rem;
       text-align: center;
     }
   }
-  
 }

@@ -22,15 +22,15 @@
   }
   
   &__col-right {
-    flex: 0 0 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 50%;
 
     @media screen and (max-width: 48.75em) {
       width: 100vw; 
-      max-height: 40vh;
+      max-height: 35vh;
     }
   }
 
