@@ -11,12 +11,13 @@
 
 @import "layout/footer";
 @import "layout/header";
-@import "layout/logos";
-@import "layout/section-carousel";
-@import "layout/section-commitment";
-@import "layout/section-features";
-@import "layout/section-hero";
-@import "layout/section-info1";
-@import "layout/section-info2";
-@import "layout/section-speak";
-@import "layout/section-suppot";
+
+@import "pages/home-logos";
+@import "pages/home-carousel";
+@import "pages/home-commitment";
+@import "pages/home-features";
+@import "pages/home-hero";
+@import "pages/home-info1";
+@import "pages/home-info2";
+@import "pages/home-speak";
+@import "pages/home-suppot";
