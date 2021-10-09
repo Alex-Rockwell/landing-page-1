@@ -34,19 +34,26 @@
     }
   }
 
-  &__link:link,
-  &__link:visited {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.6rem;
-    color: $font-color-main;
-    padding-right: 4rem;
-    transition: all .3s;
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: $font-color-main;
+      padding-right: 4rem;
+      transition: all .3s;
+    }
+  
+    &:hover {
+      color: $font-gray-dark;
+    }
+
+    &--active {
+      color: $color-tertiary !important;
+    }
   }
 
-  &__link:hover {
-    color: $font-gray-dark;
-  }
 
   &__burger {
     display: none;
