@@ -52,3 +52,31 @@ function preloadImg(img) {
   const src = img.getAttribute('data-src')
   img.src = src
 }
+
+///////////////////////////////
+// Accordion
+
+// const accordion = document.querySelector('.guides-accordion')
+const siblings = document.querySelectorAll('.guides-accordion__content')
+const titles = document.querySelectorAll('.guides-accordion__title')
+
+titles.forEach(title => {
+
+  title.addEventListener('click', function() {
+    
+    siblings.forEach(sibling => {
+        sibling.classList.remove('guides-accordion__content--active')
+    })
+    
+    if (!this.nextElementSibling.classList.contains('guides-accordion__content--active')) {
+      this.nextElementSibling.classList.add('guides-accordion__content--active')
+    }
+    // if (this.nextElementSibling.classList.contains('guides-accordion__content--active')) {
+    //   this.nextElementSibling.classList.remove('guides-accordion__content--active')
+    // }
+
+  })
+
+
+
+})
