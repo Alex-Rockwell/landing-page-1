@@ -56,27 +56,93 @@ function preloadImg(img) {
 ///////////////////////////////
 // Accordion
 
-// const accordion = document.querySelector('.guides-accordion')
-const siblings = document.querySelectorAll('.guides-accordion__content')
 const titles = document.querySelectorAll('.guides-accordion__title')
+const contentBlocks = document.querySelectorAll('.guides-accordion__content')
 
 titles.forEach(title => {
 
   title.addEventListener('click', function() {
+
+    const block = this.nextElementSibling
     
-    siblings.forEach(sibling => {
-        sibling.classList.remove('guides-accordion__content--active')
+    contentBlocks.forEach(el => {
+      if (el == block) {
+        block.classList.toggle('guides-accordion__content--active')
+        return
+      }
+
+      el.classList.remove('guides-accordion__content--active')
     })
-    
-    if (!this.nextElementSibling.classList.contains('guides-accordion__content--active')) {
-      this.nextElementSibling.classList.add('guides-accordion__content--active')
-    }
-    // if (this.nextElementSibling.classList.contains('guides-accordion__content--active')) {
-    //   this.nextElementSibling.classList.remove('guides-accordion__content--active')
-    // }
-
   })
-
-
-
+  
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// titles.forEach(title => title.addEventListener('click', function() {
+
+//   const item = this.nextElementSibling
+  
+//   contentBlocks.forEach(block => {
+//     if (block === item) {
+//       item.classList.toggle('guides-accordion__content--active')
+//       return
+//     }
+
+//     item.classList.remove('guides-accordion__content--active')
+    
+//   })
+  
+// }
+
+// ))
+
+// function toggleAccordion() {
+
+
+// }
+
+
+
+
+
+
+// const titles = document.querySelectorAll('.guides-accordion__title')
+// const siblings = document.querySelectorAll('.guides-accordion__content')
+
+// titles.forEach(title => {
+
+//   title.addEventListener('click', function() {
+    
+//     siblings.forEach(sibling => {
+//         sibling.classList.remove('guides-accordion__content--active')
+//     })
+    
+//     if (!this.nextElementSibling.classList.contains('guides-accordion__content--active')) {
+//       this.nextElementSibling.classList.add('guides-accordion__content--active')
+//     }
+//     // if (this.nextElementSibling.classList.contains('guides-accordion__content--active')) {
+//     //   this.nextElementSibling.classList.remove('guides-accordion__content--active')
+//     // }
+
+//   })
+
+// })

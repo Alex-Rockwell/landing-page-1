@@ -12,11 +12,17 @@
     
     & > *:first-child {
       margin-right: auto;
+      transition: .3s ease;
+    }
+    & > *:first-child:hover {
+      color: #666;
     }
     
     span {
       font-size: 1.7rem;
     }
+
+    
   }
   
   &__arrow {

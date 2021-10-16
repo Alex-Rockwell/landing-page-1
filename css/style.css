@@ -388,7 +388,10 @@ body {
     cursor: pointer;
     user-select: none; }
     .guides-accordion__title > *:first-child {
-      margin-right: auto; }
+      margin-right: auto;
+      transition: .3s ease; }
+    .guides-accordion__title > *:first-child:hover {
+      color: #666; }
     .guides-accordion__title span {
       font-size: 1.7rem; }
   .guides-accordion__arrow {
