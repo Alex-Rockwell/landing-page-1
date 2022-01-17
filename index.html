@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./splide/dist/css/splide.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Home - Some Company</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+  
+      <a href="./index.html" class="header__logo">
+        <svg class="header__logo-img">
+          <use xlink:href="./img/logo.svg#logo"></use>
+        </svg>
+      </a>
+  
+      <div class="header__nav-container">
+        <nav class="header__navigation">
+          <a href="#" class="header__link">How it works</a>
+          <a href="#" class="header__link">Help</a>
+          <a href="./guides.html" class="header__link">Guides</a>
+          <a href="#" class="header__link">About</a>
+        </nav>
+        <div class="header__navigation-b">
+          <a href="#" class="btn-burger">Check status</a>
+          <a href="#" class="btn-burger">Track my delivery</a>
+          <p class="header__copy">&copy; Placeholder</p>
+        </div>
+      </div>
+
+      <div class="header__log-in">
+        <a href="#" class="header__link">Check status</a>
+        <a href="#" class="btn btn--dark">Track my delivery</a>
+      </div>
+
+      <div class="header__burger">
+        <div class="header__line-1"></div>
+        <div class="header__line-2"></div>
+        <div class="header__line-3"></div>
+      </div>
+      
+    </div>
+  </header>
+
+  <section class="home-hero">
+
+    <div class="home-hero__col-left">
+      <div class="home-hero__text">
+        <h1 class="heading-1 margin-bottom-small slide-in slide-in--1">
+          We’ll take it from here
+        </h1>
+        <p class="paragraph margin-bottom-small slide-in slide-in--2">Find out what to expect from start to finish with your claim.</p>
+        <div class="home-hero__buttons">
+          <a href="#" class="btn btn--dark btn--fixed-width margin-right-small slide-in slide-in--3">Check status</a>
+          <a href="#" class="btn btn--light slide-in slide-in--3">Track my delivery</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-hero__col-right">
+      <img 
+        srcset="
+          ./img/hero-small.jpg 500w,
+          ./img/hero-medium.jpg 1520w, 
+          ./img/hero-large.jpg 1912w,"
+        sizes="
+          (max-width: 56.25em) 100vw,
+          670px" 
+        src="img/hero-medium.jpg"
+        alt="hero-image" class="home-hero__img">
+    </div>
+
+  </section>
+
+  <main class="container">
+
+    <section class="home-logos">
+
+        <div class="home-logos__item">
+          <img src="./img/logo-forbes.png" alt="" class="home-logos__img">
+        </div>
+        <div class="home-logos__item">
+          <img src="./img/logo-bbc.png" alt="" class="home-logos__img">
+        </div>
+        <div class="home-logos__item">
+          <img src="./img/logo-bi.png" alt="" class="home-logos__img">
+        </div>
+        <div class="home-logos__item">
+          <img src="./img/logo-harvard.png" alt="" class="home-logos__img">
+        </div>
+        <div class="home-logos__item">
+          <img src="./img/logo-fast-company.png" alt="" class="home-logos__img">
+        </div>
+
+    </section>
+
+    <section class="home-support">
+
+      <div class="home-support__column-left">
+        <h2 class="heading-2-s margin-bottom-small">
+          Get quick answers
+        </h2>
+        <p class="paragraph margin-bottom-small">
+          See answers to the most popular queries our customers have
+        </p>
+        <a href="#" class="btn-inline">Read FAQs</a>
+      </div>
+
+      <div class="home-support__column-right">
+        <h2 class="heading-2-s margin-bottom-small">
+          Live chat support
+        </h2>
+        <p class="paragraph margin-bottom-small">
+          Speak to our customer service team who will assist you with any questions you may have
+        </p>
+        <a href="#" class="btn-inline">Chat with us</a>
+      </div>
+
+    </section>
+
+    <section class="home-info1">
+      
+      <div class="home-info1__col-left">
+          <img data-src="./img/how-to-prepare.jpg" alt="photo" class="home-info1__img">
+      </div>
+      
+      <div class="home-info1__col-right">
+        <h2 class="heading-2-lg margin-bottom-small">
+          Prepare your device for repair
+        </h2>
+        <p class="paragraph margin-bottom-small">
+          Find out what to expect when our courier arrives to collect your device, and how to carry out useful and necessary tasks beforehand.
+        </p>
+        <a href="#" class="btn-inline">See preparation guides</a>
+      </div>
+
+    </section>
+
+    <section class="home-info2">
+      
+      <div class="home-info2__col-left">
+        
+        <h2 class="heading-2-lg margin-bottom-small">
+          What we fix
+        </h2>
+
+      </div>
+      
+      <div class="home-info2__col-right">
+
+        <p class="paragraph margin-bottom-small">
+          We are experts at repairing all types of consumer electronics, from laptops and smartphones, to wearable technology and gaming equipment. See below the categories we fix, and helpful guides in how to prepare your device for repair.
+        </p>
+        <a href="#" class="btn-inline">Our repair process</a>
+
+      </div>
+    </section>
+
+    <section class="home-carousel">
+      <div id="splide" class="splide">
+        <div class="splide__track">
+          <div class="splide__list">
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-1.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Smartphones</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-2.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Tablets</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-3.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Laptops</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-4.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Wearables</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-5.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Audio</p>
+              </div>
+            </a>
+
+            <a href="#" class="splide__slide">
+              <div class="splide__img-cont">
+                <img src="./img/slide-6.png" alt="" class="splide__img">
+              </div>
+              <div class="splide__text-cont">
+                <p class="splide__text">Photography</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <section class="home-commitment">
+      <div class="home-commitment__left">
+        <div class="home-commitment__text">
+          <h2 class="heading-2-lg margin-bottom-small">
+            Our Commitment
+          </h2>
+          <p class="paragraph">
+            Greenbridge are responsible for delivering an outstanding repair service and a smooth customer journey. We understand how reliant our customers are on their devices. We aim to promise a good service and deliver an excellent one.
+          </p>
+        </div>
+      </div>
+      <div class="home-commitment__right">
+        <img data-src="./img/commitment-md.jpg" alt="image" class="home-commitment__img">
+      </div>
+
+    </section>
+
+    <section class="home-features">
+
+      <div class="home-features__item">
+        <h3 class="home-features__heading">
+          <svg class="home-features__icon">
+            <use xlink:href="./img/sprite.svg#icon-truck"></use>
+          </svg>
+          <span>Speed</span>
+        </h3>
+        <p class="home-features__text">
+          You will receive regular text and email updates on the progress of your claim, which will be back with you as soon as possible.
+        </p>
+        <a href="#" class="btn btn--dark">Learn more </a>
+      </div>
+
+      <div class="home-features__item">
+        <h3 class="home-features__heading">
+          <svg class="home-features__icon">
+            <use xlink:href="./img/sprite.svg#icon-trophy"></use>
+          </svg>
+          <span>Quality</span>
+        </h3>
+        <p class="home-features__text">
+          Our supply source only the highest quality spare parts, and all repairs pass quality assurance standards before being returned to you.
+        </p>
+        <a href="#" class="btn btn--dark">Learn more </a>
+      </div>
+
+      <div class="home-features__item">
+        <h3 class="home-features__heading">
+          <svg class="home-features__icon">
+            <use xlink:href="./img/sprite.svg#icon-lock"></use>
+          </svg>
+          <span>Privacy</span>
+        </h3>
+        <p class="home-features__text">
+          As a certified GDPR compliant Company, your data will be handled in a safe and compliant manner at all times.
+        </p>
+        <a href="#" class="btn btn--dark">Learn more </a>
+      </div>
+
+    </section>
+
+    <section class="home-speak">
+      
+      <div class="home-speak__left">
+        <div class="home-speak__img-container">
+          <img data-src="./img/check-md.jpg" alt="image" class="home-speak__img">
+        </div>
+        <div class="home-speak__text">
+          <h3 class="heading-3 margin-bottom-small2">
+            See repair status
+          </h3>
+          <p class="paragraph margin-bottom-small2">
+            Log in now to see when your repair will be completed
+          </p>
+          <a href="#" class="btn btn--dark btn--fixed-width">Login now</a>
+        </div>
+      </div>
+
+      <div class="home-speak__right">
+        <div class="home-speak__cta">
+
+          <h2 class="heading-2-lg">Speak</h2>
+          <h2 class="heading-2-lg margin-bottom-small">with us</h2>
+          
+          <p class="paragraph">Need support? We are here to help.</p>
+          <p class="paragraph margin-bottom-small">Click below to chat with us.</p>
+
+          <a href="#" class="btn btn--dark2 btn--fixed-width">Live chat</a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__logo-box">
+        <a href="#">
+          <svg class="footer__logo-img">
+            <use xlink:href="./img/logo.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+  
+      <div class="footer__info">
+        <div class="footer__adress">
+
+            Unit 6<br>
+            Platinum Court<br>
+            Alchemy Industrial Estate<br>
+            Knowsley<br>
+            L33 7XN
+
+        </div>
+        <div class="footer__nav">
+
+          <div class="footer__nav-box">
+            <h4 class="heading-4 margin-bottom-small">Help and support</h4>
+            <nav>
+              <a href="#" class="footer__link">FAQ's</a>
+              <a href="#" class="footer__link">Live chart</a>
+              <a href="#" class="footer__link">Contact us</a>
+            </nav>
+          </div>
+
+          <div class="footer__nav-box">
+            <h4 class="heading-4 margin-bottom-small">Guides</h4>
+            <nav>
+              <a href="#" class="footer__link">MacBook</a>
+              <a href="#" class="footer__link">Delivery</a>
+              <a href="#" class="footer__link">Smartphones</a>
+              <a href="#" class="footer__link">Tablets</a>
+              <a href="#" class="footer__link">Laptop</a>
+              <a href="#" class="footer__link">Wearables</a>
+              <a href="#" class="footer__link">Audio Visual</a>
+              <a href="#" class="footer__link">Photography</a>
+              <a href="#" class="footer__link">Gaming</a>         
+            </nav>
+          </div>
+
+          <div class="footer__nav-box">
+            <h4 class="heading-4 margin-bottom-small">Company</h4>
+            <nav>
+              <a href="#" class="footer__link">About us</a>
+              <a href="#" class="footer__link">Our Services</a>
+              <a href="#" class="footer__link">Careers</a>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+  
+      <div class="footer__copy">
+        <a href="#" class="footer__link footer__link--dark">Privacy Notice</a>
+        <span>&copy; Placeholder</span>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="./splide/dist/js/splide.min.js"></script>
+  <script>
+    new Splide( '.splide', {
+      type: 'loop',
+      perPage: 3,
+      perMove: 1,
+      speed: 1000,
+      pagination: false,
+      classes: {
+		arrows: 'splide__arrows',
+		arrow : 'splide__arrow change-arrow',
+		prev  : 'splide__arrow--prev',
+		next  : 'splide__arrow--next',
+	},
+    } ).mount();
+  </script>
+</body>
+</html>
